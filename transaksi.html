@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Transaksi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-text-container">
+           <a href="index.html"><img src="https://i.pinimg.com/736x/17/f1/11/17f11174ba7f057202e88a2129c27598.jpg" alt="Logo"></a>
+            <div class="text">
+                <div class="subtitle">Belanja.Store</div>
+            </div>
+        </div>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="transaksi.html">Transaksi</a></li>
+                <li><a href="profil.html">Profil</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"> Isi data transaksi berikut ini</h2>
+        <br>
+        <form id="transactionForm">
+            <label for="transactionName">Nama Transaksi:</label>
+            <input type="text" id="transactionName" name="transactionName">
+        
+            <label for="transactionAmount">Jumlah Transaksi:</label>
+            <input type="number" id="transactionAmount" name="transactionAmount">
+        
+            <label for="transactionCategory">Kategori Transaksi:</label>
+            <select id="transactionCategory" name="transactionCategory">
+                <option value="">Pilih Kategori</option>
+                <option value="pembelian">Pembelian</option>
+                <option value="penjualan">Penjualan</option>
+                <option value="lainnya">Lainnya</option>
+            </select>
+        
+            <button type="submit">Simpan Transaksi</button>
+            <button type="button" onclick="resetForm()">Reset Form</button>
+        </form>
+        <br>
+        <center>
+       <br>
+        <a href="halamantrnsksi.html">Lihat Daftar Transaksi</a>
+    </center>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Universitas Pamulang</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
